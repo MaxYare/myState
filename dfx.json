@@ -1,9 +1,11 @@
 {
   "canisters": {
+
     "myState_backend": {
       "main": "src/myState_backend/main.mo",
       "type": "motoko"
     },
+
     "myState_frontend": {
       "dependencies": [
         "myState_backend"

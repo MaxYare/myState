@@ -11,6 +11,16 @@
     "start": "npm start --workspaces --if-present",
     "test": "npm test --workspaces --if-present"
   },
+  "dependencies": {
+    "mo-dev": "^0.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-full-screen": "^1.1.1",
+    "react-iframe": "^1.8.5",
+    "react-router": "^6.22.1",
+    "react-router-dom": "6.10.0",
+    "react-scripts": "5.0.1"
+  },
   "type": "module",
   "workspaces": [
     "src/myState_frontend"

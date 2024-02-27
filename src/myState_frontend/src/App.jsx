@@ -1,31 +1,26 @@
-import { useState } from 'react';
-import { myState_backend } from 'declarations/myState_backend';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Tabs from "./components/Tabs";
+import Intro from './components/Intro';
 
-function App() {
-  const [greeting, setGreeting] = useState('');
+class App extends React.Component {
+  render() {
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    myState_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
+    return (
+      <BrowserRouter>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+          <Tabs />
+          <Intro />
+        </div>
+
+      </BrowserRouter>
+    );
   }
-
-  return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
-  );
 }
 
-export default App;
+export default () => (
+
+  <App />
+
+)
+
