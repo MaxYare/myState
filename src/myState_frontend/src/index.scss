@@ -52,12 +52,6 @@ dt span {
   font-weight: 600;
 }
 
-.video {
-  margin: 0 auto 20px;
-  display: block;
-  font-size: 400%;
-}
-
 dd {
   font-size: 92.5%;
   margin-left: 0;
@@ -81,104 +75,6 @@ dd dl .term {
   margin-bottom: 1rem;
 }
 
-/* The side navigation menu */
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
-}
-
-/* Active/current link */
-.sidebar a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-
-/* Style the links inside the sidenav */
-#mySidenav a {
-  position: fixed; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-}
-
-#mySidenav a:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-
-/* The about link: 20px from the top with a green background */
-#about {
-  bottom: 20px;
-  background-color: #04aa6d;
-}
-
-#blog {
-  bottom: 80px;
-  background-color: #2196f3; /* Blue */
-}
-
-#projects {
-  bottom: 140px;
-  background-color: #f44336; /* Red */
-}
-
-#contact {
-  bottom: 200px;
-  background-color: #555; /* Light Black */
-}
 
 /* Style Tabs.jsx */
 .tab {
