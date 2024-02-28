@@ -3,7 +3,7 @@ import Money from "./Money";
 import Freedom from "./Freedom";
 import logo from "../assets/myState-logo-square-black_transparent.png";
 import { Link } from "react-router-dom";
-import Solution from "./Solution";
+import Join from "./Join";
 
 function Tabs() {
   return (
@@ -27,8 +27,8 @@ function Tabs() {
         >
           Freedom
         </button>
-        <button className="tablinks" onClick={(event) => openTab(event, "Solution")}>
-          Solution
+        <button className="tablinks" onClick={(event) => openTab(event, "Join")}>
+          Join myState
         </button>
       </div>
       <div id="Money" className="tabcontent">
@@ -37,8 +37,8 @@ function Tabs() {
       <div id="Freedom" className="tabcontent">
         <Freedom/>
       </div>
-      <div id="Solution" className="tabcontent">
-        <Solution />
+      <div id="Join" className="tabcontent">
+        <Join/>
       </div>
     </div>
   );

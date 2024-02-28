@@ -10,9 +10,9 @@ function Card(props) {
   return (
     <div className="term">
       <dt>        
-        <span className="video" role="img">
+        {/* <span className="video" role="img"> */}
             {props.video}
-        </span>
+        {/* </span> */}
         <span>{props.name}</span>
       </dt>
       <dd>{props.description}</dd>
